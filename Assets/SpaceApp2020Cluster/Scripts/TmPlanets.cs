@@ -16,9 +16,24 @@ namespace TmLib{
 			Uranus=8,	// 天王星
 			Pluto=9,	// 冥王星
 			Neptune=10,	// 海王星
-		}
+		};
 
-		public static float[,] coodParams = new float[,]
+        public static string[] PlanetNames =
+        {
+            "Earth",  // 地球
+            "Sun",        // 太陽
+            "Moon",       // 月
+            "Mars",       // 火星
+            "Mercury",    // 水星
+            "Jupiter",    // 木星
+            "Venus",  // 金星
+            "Saturn", // 土星
+            "Uranus", // 天王星
+            "Pluto",  // 冥王星
+            "Neptune",   // 海王星
+        };
+
+        public static float[,] coodParams = new float[,]
 		{ //sclX,sclY,ofsX,ofsY,sclY1,sclY1,ofs1X,ofsY1,ringMin,ringMax,Re
 			{8f,4f,0f,4f,0f,0f,0f,0f,0.0f,0.0f},  // Earth=0,	// 地球
 			{2f,1f,4f,0f,0f,0f,0f,0f,0.0f,0.0f},  // Sun,		// 太陽
@@ -59,7 +74,8 @@ namespace TmLib{
 			angGo.transform.position = _planetGo.transform.position;
 			angGo.transform.rotation = _planetGo.transform.rotation;
 			_planetGo.transform.SetParent (angGo.transform);
-			GameObject pivotGo = new GameObject (_planetGo.name + "pivot");
+            _planetGo.transform.localScale = Vector3.one * planetParams[id, 1];
+            GameObject pivotGo = new GameObject (_planetGo.name + PlanetNames[id]);
 			pivotGo.transform.position = angGo.transform.position;
 			pivotGo.transform.rotation = angGo.transform.rotation;
 			angGo.transform.SetParent (pivotGo.transform);

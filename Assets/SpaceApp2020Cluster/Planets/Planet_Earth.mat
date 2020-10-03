@@ -7,7 +7,7 @@ Material:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_Name: Planet_base 1
+  m_Name: Planet_Earth
   m_Shader: {fileID: 45, guid: 0000000000000000f000000000000000, type: 0}
   m_ShaderKeywords: _METALLICGLOSSMAP _SPECGLOSSMAP
   m_LightmapFlags: 4
@@ -25,7 +25,7 @@ Material:
         m_Offset: {x: 0, y: 0}
     - _DetailAlbedoMap:
         m_Texture: {fileID: 0}
-        m_Scale: {x: 1, y: 1}
+        m_Scale: {x: 0, y: 0}
         m_Offset: {x: 0, y: 0}
     - _DetailMask:
         m_Texture: {fileID: 0}
@@ -37,12 +37,12 @@ Material:
         m_Offset: {x: 0, y: 0}
     - _EmissionMap:
         m_Texture: {fileID: 0}
-        m_Scale: {x: 1, y: 1}
-        m_Offset: {x: 0, y: 0}
+        m_Scale: {x: 0.99875, y: 0.49875}
+        m_Offset: {x: 0.000625, y: 0.500625}
     - _MainTex:
         m_Texture: {fileID: 2800000, guid: cb796d504e914194f8ac6615f85baec4, type: 3}
-        m_Scale: {x: 1, y: 1}
-        m_Offset: {x: 0, y: 0}
+        m_Scale: {x: 0.99875, y: 0.49875}
+        m_Offset: {x: 0.000625, y: 0.500625}
     - _MetallicGlossMap:
         m_Texture: {fileID: 2800000, guid: 9b8ae90f332bf0941b6673b4c04e76ef, type: 3}
         m_Scale: {x: 1, y: 1}
