@@ -24,6 +24,7 @@ namespace Constellation
 
         [SerializeField] Hipparcos hipparcosScr = null;
         [SerializeField] bool hideZodiac = true;
+        [SerializeField] bool useParallax = false;
 
         private List<Hipparcos.HipLine> hipLineList;
 
@@ -51,13 +52,20 @@ namespace Constellation
             {
                 Vector3[] posArr = new Vector3[_hipLineList.Count * 2];
                 for (int i = 0; i < _hipLineList.Count; ++i){
-                    posArr[i * 2 + 0] = _hipLineList[i].sttData.direction * hipparcosScr.distance;
-                    posArr[i * 2 + 1] = _hipLineList[i].endData.direction * hipparcosScr.distance;
+                    float paradist_stt = hipparcosScr.distance;
+                    float paradist_end = hipparcosScr.distance;
+                    if (useParallax)
+                    {
+                        paradist_stt *= (1f + Mathf.Abs(_hipLineList[i].sttData.magnitude) * 0.5f);
+                        paradist_end *= (1f + Mathf.Abs(_hipLineList[i].endData.magnitude) * 0.5f);
+                    }
+                    posArr[i * 2 + 0] = _hipLineList[i].sttData.direction * paradist_stt;
+                    posArr[i * 2 + 1] = _hipLineList[i].endData.direction * paradist_end;
                 }
                 Mesh mesh = TmLib.TmMesh.CreateLine(posArr, TmLib.TmMesh.LineMeshType.Lines, Color.gray);
 
 #if false
-                string path = UnityEditor.AssetDatabase.GenerateUniqueAssetPath("Assets/" + _name + ".asset");
+                string path = UnityEditor.AssetDatabase.GenerateUniqueAssetPath("Assets/" + _name + (useParallax ? "_parallax" : "") + ".asset");
                 UnityEditor.AssetDatabase.CreateAsset(mesh, path);
                 UnityEditor.AssetDatabase.SaveAssets();
 #endif
