@@ -60,8 +60,8 @@ namespace Constellation
                         MeshFilter mf = meshObj.GetComponent<MeshFilter>();
                         Mesh mesh = TmLib.TmMesh.CreateQuadCloud(vtcs.ToArray(), cols.ToArray(),0.02f,true);
                         mf.mesh = mesh;
-#if false
-                        string path = UnityEditor.AssetDatabase.GenerateUniqueAssetPath("Assets/" + name + ".asset");
+#if true
+                        string path = UnityEditor.AssetDatabase.GenerateUniqueAssetPath("Assets/" + name + "_parallax.asset");
                         UnityEditor.AssetDatabase.CreateAsset(mesh, path);
                         UnityEditor.AssetDatabase.SaveAssets();
 #endif
