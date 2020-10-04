@@ -6179,6 +6179,21 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 1523759317522362547}
     m_Modifications:
+    - target: {fileID: 1498303938625402663, guid: 907d74229d373c24abb2cee931702be3,
+        type: 3}
+      propertyPath: m_LocalRotation.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1498303938625402663, guid: 907d74229d373c24abb2cee931702be3,
+        type: 3}
+      propertyPath: m_LocalRotation.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1498303938625402663, guid: 907d74229d373c24abb2cee931702be3,
+        type: 3}
+      propertyPath: m_LocalRotation.z
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 8216572573618282138, guid: 907d74229d373c24abb2cee931702be3,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -6188,11 +6203,6 @@ PrefabInstance:
         type: 3}
       propertyPath: m_LocalPosition.y
       value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 8216572573618282138, guid: 907d74229d373c24abb2cee931702be3,
-        type: 3}
-      propertyPath: m_LocalPosition.z
-      value: 30
       objectReference: {fileID: 0}
     - target: {fileID: 8216572573618282138, guid: 907d74229d373c24abb2cee931702be3,
         type: 3}
@@ -6644,6 +6654,21 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: planetEarth
+      objectReference: {fileID: 0}
+    - target: {fileID: 6203736493723965206, guid: c75fd47b834a04a44afe644f6bcbd532,
+        type: 3}
+      propertyPath: m_LocalScale.x
+      value: 60.34
+      objectReference: {fileID: 0}
+    - target: {fileID: 6203736493723965206, guid: c75fd47b834a04a44afe644f6bcbd532,
+        type: 3}
+      propertyPath: m_LocalScale.y
+      value: 60.34
+      objectReference: {fileID: 0}
+    - target: {fileID: 6203736493723965206, guid: c75fd47b834a04a44afe644f6bcbd532,
+        type: 3}
+      propertyPath: m_LocalScale.z
+      value: 60.34
       objectReference: {fileID: 0}
     - target: {fileID: 6585590968989893133, guid: c75fd47b834a04a44afe644f6bcbd532,
         type: 3}
