@@ -679,6 +679,8 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 1523759316796595244}
+  - component: {fileID: 1861442493}
+  - component: {fileID: 1861442492}
   m_Layer: 0
   m_Name: 04_MarsPivot
   m_TagString: Untagged
@@ -702,6 +704,34 @@ Transform:
   m_Father: {fileID: 1523759318259029963}
   m_RootOrder: 5
   m_LocalEulerAnglesHint: {x: 0, y: 4, z: 0}
+--- !u!54 &1861442493
+Rigidbody:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1523759316796595247}
+  serializedVersion: 2
+  m_Mass: 1
+  m_Drag: 0
+  m_AngularDrag: 1
+  m_UseGravity: 0
+  m_IsKinematic: 0
+  m_Interpolate: 0
+  m_Constraints: 80
+  m_CollisionDetection: 0
+--- !u!75 &1861442492
+ConstantForce:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1523759316796595247}
+  m_Enabled: 1
+  m_Force: {x: 0, y: 0, z: 0}
+  m_RelativeForce: {x: 0, y: 0, z: 0}
+  m_Torque: {x: 0, y: 0.00531, z: 0}
+  m_RelativeTorque: {x: 0, y: 0, z: 0}
 --- !u!1 &1523759316805883670
 GameObject:
   m_ObjectHideFlags: 0
@@ -711,6 +741,8 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 1523759316805883671}
+  - component: {fileID: 824625761}
+  - component: {fileID: 824625760}
   m_Layer: 0
   m_Name: 03_EarthPivot
   m_TagString: Untagged
@@ -734,6 +766,34 @@ Transform:
   m_Father: {fileID: 1523759318259029963}
   m_RootOrder: 4
   m_LocalEulerAnglesHint: {x: 0, y: 3, z: 0}
+--- !u!54 &824625761
+Rigidbody:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1523759316805883670}
+  serializedVersion: 2
+  m_Mass: 1
+  m_Drag: 0
+  m_AngularDrag: 1
+  m_UseGravity: 0
+  m_IsKinematic: 0
+  m_Interpolate: 0
+  m_Constraints: 80
+  m_CollisionDetection: 0
+--- !u!75 &824625760
+ConstantForce:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1523759316805883670}
+  m_Enabled: 1
+  m_Force: {x: 0, y: 0, z: 0}
+  m_RelativeForce: {x: 0, y: 0, z: 0}
+  m_Torque: {x: 0, y: 0.01, z: 0}
+  m_RelativeTorque: {x: 0, y: 0, z: 0}
 --- !u!1 &1523759317423749402
 GameObject:
   m_ObjectHideFlags: 0
@@ -743,6 +803,8 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 1523759317423749403}
+  - component: {fileID: 1311068283}
+  - component: {fileID: 1311068282}
   m_Layer: 0
   m_Name: 02_VenusPivot
   m_TagString: Untagged
@@ -766,6 +828,34 @@ Transform:
   m_Father: {fileID: 1523759318259029963}
   m_RootOrder: 3
   m_LocalEulerAnglesHint: {x: 0, y: 2, z: 0}
+--- !u!54 &1311068283
+Rigidbody:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1523759317423749402}
+  serializedVersion: 2
+  m_Mass: 1
+  m_Drag: 0
+  m_AngularDrag: 1
+  m_UseGravity: 0
+  m_IsKinematic: 0
+  m_Interpolate: 0
+  m_Constraints: 80
+  m_CollisionDetection: 0
+--- !u!75 &1311068282
+ConstantForce:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1523759317423749402}
+  m_Enabled: 1
+  m_Force: {x: 0, y: 0, z: 0}
+  m_RelativeForce: {x: 0, y: 0, z: 0}
+  m_Torque: {x: 0, y: 0.01662, z: 0}
+  m_RelativeTorque: {x: 0, y: 0, z: 0}
 --- !u!1 &1523759317522362546
 GameObject:
   m_ObjectHideFlags: 0
@@ -806,6 +896,8 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 1523759317835912662}
+  - component: {fileID: 894773206}
+  - component: {fileID: 894773205}
   m_Layer: 0
   m_Name: 06_SaturnPivot
   m_TagString: Untagged
@@ -829,6 +921,34 @@ Transform:
   m_Father: {fileID: 1523759318259029963}
   m_RootOrder: 7
   m_LocalEulerAnglesHint: {x: 0, y: 6, z: 0}
+--- !u!54 &894773206
+Rigidbody:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1523759317835912657}
+  serializedVersion: 2
+  m_Mass: 1
+  m_Drag: 0
+  m_AngularDrag: 1
+  m_UseGravity: 0
+  m_IsKinematic: 0
+  m_Interpolate: 0
+  m_Constraints: 80
+  m_CollisionDetection: 0
+--- !u!75 &894773205
+ConstantForce:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1523759317835912657}
+  m_Enabled: 1
+  m_Force: {x: 0, y: 0, z: 0}
+  m_RelativeForce: {x: 0, y: 0, z: 0}
+  m_Torque: {x: 0, y: 0, z: 0}
+  m_RelativeTorque: {x: 0, y: 0, z: 0}
 --- !u!1 &1523759317978575307
 GameObject:
   m_ObjectHideFlags: 0
@@ -838,6 +958,8 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 1523759317978575304}
+  - component: {fileID: 667035950}
+  - component: {fileID: 667035949}
   m_Layer: 0
   m_Name: 05_JupiterPivot
   m_TagString: Untagged
@@ -861,6 +983,34 @@ Transform:
   m_Father: {fileID: 1523759318259029963}
   m_RootOrder: 6
   m_LocalEulerAnglesHint: {x: 0, y: 5, z: 0}
+--- !u!54 &667035950
+Rigidbody:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1523759317978575307}
+  serializedVersion: 2
+  m_Mass: 1
+  m_Drag: 0
+  m_AngularDrag: 1
+  m_UseGravity: 0
+  m_IsKinematic: 0
+  m_Interpolate: 0
+  m_Constraints: 80
+  m_CollisionDetection: 0
+--- !u!75 &667035949
+ConstantForce:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1523759317978575307}
+  m_Enabled: 1
+  m_Force: {x: 0, y: 0, z: 0}
+  m_RelativeForce: {x: 0, y: 0, z: 0}
+  m_Torque: {x: 0, y: 0.000001, z: 0}
+  m_RelativeTorque: {x: 0, y: 0, z: 0}
 --- !u!1 &1523759318097705979
 GameObject:
   m_ObjectHideFlags: 0
@@ -870,6 +1020,8 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 1523759318097705976}
+  - component: {fileID: 787403665}
+  - component: {fileID: 787403664}
   m_Layer: 0
   m_Name: 08_NeptunePivot
   m_TagString: Untagged
@@ -893,6 +1045,34 @@ Transform:
   m_Father: {fileID: 1523759318259029963}
   m_RootOrder: 10
   m_LocalEulerAnglesHint: {x: 0, y: 8, z: 0}
+--- !u!54 &787403665
+Rigidbody:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1523759318097705979}
+  serializedVersion: 2
+  m_Mass: 1
+  m_Drag: 0
+  m_AngularDrag: 1
+  m_UseGravity: 0
+  m_IsKinematic: 0
+  m_Interpolate: 0
+  m_Constraints: 80
+  m_CollisionDetection: 0
+--- !u!75 &787403664
+ConstantForce:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1523759318097705979}
+  m_Enabled: 1
+  m_Force: {x: 0, y: 0, z: 0}
+  m_RelativeForce: {x: 0, y: 0, z: 0}
+  m_Torque: {x: 0, y: 0, z: 0}
+  m_RelativeTorque: {x: 0, y: 0, z: 0}
 --- !u!1 &1523759318221647585
 GameObject:
   m_ObjectHideFlags: 0
@@ -902,6 +1082,8 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 1523759318221647590}
+  - component: {fileID: 200331992}
+  - component: {fileID: 200331991}
   m_Layer: 0
   m_Name: 07_UranusPivot
   m_TagString: Untagged
@@ -925,6 +1107,34 @@ Transform:
   m_Father: {fileID: 1523759318259029963}
   m_RootOrder: 8
   m_LocalEulerAnglesHint: {x: 0, y: 7, z: 0}
+--- !u!54 &200331992
+Rigidbody:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1523759318221647585}
+  serializedVersion: 2
+  m_Mass: 1
+  m_Drag: 0
+  m_AngularDrag: 1
+  m_UseGravity: 0
+  m_IsKinematic: 0
+  m_Interpolate: 0
+  m_Constraints: 80
+  m_CollisionDetection: 0
+--- !u!75 &200331991
+ConstantForce:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1523759318221647585}
+  m_Enabled: 1
+  m_Force: {x: 0, y: 0, z: 0}
+  m_RelativeForce: {x: 0, y: 0, z: 0}
+  m_Torque: {x: 0, y: 0, z: 0}
+  m_RelativeTorque: {x: 0, y: 0, z: 0}
 --- !u!1 &1523759318259029962
 GameObject:
   m_ObjectHideFlags: 0
@@ -950,7 +1160,7 @@ Transform:
   m_GameObject: {fileID: 1523759318259029962}
   m_LocalRotation: {x: 0, y: -0.93285924, z: 0, w: 0.36024112}
   m_LocalPosition: {x: 0, y: 2, z: 0}
-  m_LocalScale: {x: 0.02, y: 0.02, z: 0.02}
+  m_LocalScale: {x: 0.5, y: 0.5, z: 0.5}
   m_Children:
   - {fileID: 1523759318661673819}
   - {fileID: 1523759318667412673}
@@ -976,6 +1186,8 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 1523759318535484029}
+  - component: {fileID: 1552094937}
+  - component: {fileID: 1552094936}
   m_Layer: 0
   m_Name: 01_MercuryPivot
   m_TagString: Untagged
@@ -999,6 +1211,34 @@ Transform:
   m_Father: {fileID: 1523759318259029963}
   m_RootOrder: 2
   m_LocalEulerAnglesHint: {x: 0, y: 1, z: 0}
+--- !u!54 &1552094937
+Rigidbody:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1523759318535484028}
+  serializedVersion: 2
+  m_Mass: 1
+  m_Drag: 0
+  m_AngularDrag: 1
+  m_UseGravity: 0
+  m_IsKinematic: 0
+  m_Interpolate: 0
+  m_Constraints: 80
+  m_CollisionDetection: 0
+--- !u!75 &1552094936
+ConstantForce:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1523759318535484028}
+  m_Enabled: 1
+  m_Force: {x: 0, y: 0, z: 0}
+  m_RelativeForce: {x: 0, y: 0, z: 0}
+  m_Torque: {x: 0, y: 0.04147, z: 0}
+  m_RelativeTorque: {x: 0, y: 0, z: 0}
 --- !u!1 &1523759318661673797
 GameObject:
   m_ObjectHideFlags: 0
@@ -1132,6 +1372,8 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 1523759318822152566}
+  - component: {fileID: 771012952}
+  - component: {fileID: 771012951}
   m_Layer: 0
   m_Name: 07p_PlutoPivot
   m_TagString: Untagged
@@ -1155,6 +1397,34 @@ Transform:
   m_Father: {fileID: 1523759318259029963}
   m_RootOrder: 9
   m_LocalEulerAnglesHint: {x: 0, y: 7.5, z: 0}
+--- !u!54 &771012952
+Rigidbody:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1523759318822152561}
+  serializedVersion: 2
+  m_Mass: 1
+  m_Drag: 0
+  m_AngularDrag: 1
+  m_UseGravity: 0
+  m_IsKinematic: 0
+  m_Interpolate: 0
+  m_Constraints: 80
+  m_CollisionDetection: 0
+--- !u!75 &771012951
+ConstantForce:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1523759318822152561}
+  m_Enabled: 1
+  m_Force: {x: 0, y: 0, z: 0}
+  m_RelativeForce: {x: 0, y: 0, z: 0}
+  m_Torque: {x: 0, y: 0, z: 0}
+  m_RelativeTorque: {x: 0, y: 0, z: 0}
 --- !u!1 &2362459019184684191
 GameObject:
   m_ObjectHideFlags: 0
